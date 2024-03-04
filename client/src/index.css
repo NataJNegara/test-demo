@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply hover:bg-indigo-600 h-8 w-8 rounded-md grid place-items-center;
+  }
+  .card {
+    @apply bg-slate-50 p-4 rounded-2xl shadow-md flex flex-col gap-8 items-center justify-center max-w-screen-lg mx-auto;
+  }
+  .title {
+    @apply text-4xl font-semibold text-gray-600;
+  }
+  .input {
+    @apply outline-none border-none ring-1 ring-indigo-500 rounded-sm py-1 px-2 focus:ring-2;
+  }
+  .form {
+    @apply grid gap-4 w-1/2;
+  }
+  .input-row {
+    @apply grid grid-cols-[2fr,3fr] items-center;
+  }
+  .primary-btn {
+    @apply bg-indigo-500 text-white p-2 rounded-md font-semibold hover:bg-indigo-700 ease-in transition-all;
+  }
+}

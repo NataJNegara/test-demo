@@ -49,7 +49,7 @@ export async function addPost(title, body) {
 
 // -------------------------DELETE POST
 export async function deletePost(_id) {
-  const res = await fetch(`api/posts/${_id}`, {
+  const res = await fetch(`/api/posts/${_id}`, {
     method: "DELETE",
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
